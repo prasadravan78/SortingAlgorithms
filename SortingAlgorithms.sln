@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleSort", "BubbleSort\BubbleSort.csproj", "{3C5F9468-0CD3-46CD-AA3D-36E24C46470D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithmTests", "AlgorithmTests\AlgorithmTests.csproj", "{AA34E219-DD80-4605-A09E-BA6663335A30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C5F9468-0CD3-46CD-AA3D-36E24C46470D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C5F9468-0CD3-46CD-AA3D-36E24C46470D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C5F9468-0CD3-46CD-AA3D-36E24C46470D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C5F9468-0CD3-46CD-AA3D-36E24C46470D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA34E219-DD80-4605-A09E-BA6663335A30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA34E219-DD80-4605-A09E-BA6663335A30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA34E219-DD80-4605-A09E-BA6663335A30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA34E219-DD80-4605-A09E-BA6663335A30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D4DF351-F1C8-434B-A337-F79ED19107B4}
+	EndGlobalSection
+EndGlobal
