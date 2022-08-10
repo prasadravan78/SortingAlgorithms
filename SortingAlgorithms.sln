@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleSort", "BubbleSort\BubbleSort.csproj", "{3C5F9468-0CD3-46CD-AA3D-36E24C46470D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BubbleSort", "BubbleSort\BubbleSort.csproj", "{3C5F9468-0CD3-46CD-AA3D-36E24C46470D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithmTests", "AlgorithmTests\AlgorithmTests.csproj", "{AA34E219-DD80-4605-A09E-BA6663335A30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgorithmTests", "AlgorithmTests\AlgorithmTests.csproj", "{AA34E219-DD80-4605-A09E-BA6663335A30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSort", "SelectionSort\SelectionSort.csproj", "{E900E3D3-89FF-415C-B010-2F1FD786AB87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{AA34E219-DD80-4605-A09E-BA6663335A30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA34E219-DD80-4605-A09E-BA6663335A30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA34E219-DD80-4605-A09E-BA6663335A30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E900E3D3-89FF-415C-B010-2F1FD786AB87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E900E3D3-89FF-415C-B010-2F1FD786AB87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E900E3D3-89FF-415C-B010-2F1FD786AB87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E900E3D3-89FF-415C-B010-2F1FD786AB87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

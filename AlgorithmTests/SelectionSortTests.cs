@@ -1,8 +1,9 @@
-namespace AlgorithmTests
+﻿namespace AlgorithmTests
 {
-    using BubbleSort;
+    using SelectionSort;
+    using System;
 
-    public class BubbleSortTests
+    public class SelectionSortTests
     {
         private static int[][] GetSampleData()
         {
@@ -18,28 +19,28 @@ namespace AlgorithmTests
         }
 
         [Test]
-        public void BubbleSortValidInput()
+        public void SelectionSortValidInput()
         {
-            RunTestsForBubbleSort(BubbleSort.BubbleSortAlgorithm);
+            RunTestsForSelctionSort(SelectionSort.SelectionSortAlgorithm);
         }
 
-        private static void RunTestsForBubbleSort(Func<int[], int[]> sortAlgorithm)
+        private void RunTestsForSelctionSort(Func<int[], int[]> selectionSortAlgorithm)
         {
             var sampleData = GetSampleData();
 
             foreach (var sample in sampleData)
             {
-                var result = sortAlgorithm(sample);
+                var result = selectionSortAlgorithm(sample);
                 CollectionAssert.IsOrdered(result);
                 PrintResults(result);
             }
         }
 
-        private static void PrintResults(int[] sample)
+        private void PrintResults(int[] result)
         {
             TestContext.WriteLine("---------------------------------------");
 
-            foreach (var num in sample)
+            foreach (var num in result)
             {
                 TestContext.Write(num + " ");
             }

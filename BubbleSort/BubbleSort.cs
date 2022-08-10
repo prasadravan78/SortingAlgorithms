@@ -5,9 +5,10 @@
         static void Main(string[] args)
         {
             var array = new int[] { 3, 6, 2, 9, 8 };
-            BubbleSortAlgorithm(array);
 
-            foreach (var num in array)
+            var result = BubbleSortAlgorithm(array);
+
+            foreach (var num in result)
             {
                 Console.Write(num + " ");
             }
@@ -15,7 +16,7 @@
             Console.ReadLine();
         }
 
-        public static void BubbleSortAlgorithm(int[] nums)
+        public static int[] BubbleSortAlgorithm(int[] nums)
         {
             for (int i = nums.Length - 1; i >= 0; i--)
             {
@@ -27,6 +28,8 @@
                     }
                 }
             }
+
+            return nums;
         }
     }
 }
