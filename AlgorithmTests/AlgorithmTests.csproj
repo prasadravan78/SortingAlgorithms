@@ -20,6 +20,7 @@
     <ProjectReference Include="..\BubbleSort\BubbleSort.csproj" />
     <ProjectReference Include="..\InsertionSort\InsertionSort.csproj" />
     <ProjectReference Include="..\SelectionSort\SelectionSort.csproj" />
+    <ProjectReference Include="..\ShellSort\ShellSort.csproj" />
   </ItemGroup>
 
 </Project>
