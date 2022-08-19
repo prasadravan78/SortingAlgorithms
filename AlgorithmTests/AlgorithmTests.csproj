@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -26,6 +26,7 @@
     <ProjectReference Include="..\BubbleSort\BubbleSort.csproj" />
     <ProjectReference Include="..\InsertionSort\InsertionSort.csproj" />
     <ProjectReference Include="..\MergeSort\MergeSort.csproj" />
+    <ProjectReference Include="..\QuickSort\QuickSort.csproj" />
     <ProjectReference Include="..\SelectionSort\SelectionSort.csproj" />
     <ProjectReference Include="..\ShellSort\ShellSort.csproj" />
   </ItemGroup>
