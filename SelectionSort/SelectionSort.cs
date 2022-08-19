@@ -1,10 +1,14 @@
-﻿using System.Reflection.Metadata.Ecma335;
-
-namespace SelectionSort
+﻿namespace SelectionSort
 {
+    /// <summary>
+    /// Provides methods for Selection Sort.
+    /// </summary>
     public class SelectionSort
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// Entry point for Program.
+        /// </summary>
+        public static void Main()
         {
             var array = new int[] { 9, 5, 8, -1, 4 };
 

@@ -1,8 +1,8 @@
 ﻿namespace AlgorithmTests
 {
+    using System;
     using InsertionSort;
     using NUnit.Framework;
-    using System;
 
     internal class InsertionSortTests
     {
@@ -12,7 +12,7 @@
             RunTestsForInsertionSort(InsertionSort.InsertionSortAlgorithm);
         }
 
-        private void RunTestsForInsertionSort(Func<int[], int[]> insertionSortAlgorithm)
+        private static void RunTestsForInsertionSort(Func<int[], int[]> insertionSortAlgorithm)
         {
             var sampleData = GetSampleData();
 
@@ -24,7 +24,7 @@
             }
         }
 
-        private void PrintResults(int[] result)
+        private static void PrintResults(int[] result)
         {
             TestContext.WriteLine("---------------------------------------");
 
@@ -36,7 +36,7 @@
             TestContext.WriteLine("***************************************");
         }
 
-        private int[][] GetSampleData()
+        private static int[][] GetSampleData()
         {
             var sampleData = new int[5][];
 

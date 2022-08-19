@@ -1,20 +1,20 @@
-namespace AlgorithmTests
+﻿namespace AlgorithmTests
 {
-    using BubbleSort;
+    using MergeSort;
     using NUnit.Framework;
 
     /// <summary>
-    /// Provides Bubble Sort tests.
+    /// Provides Merge sort tests.
     /// </summary>
-    public class BubbleSortTests
+    public class MergeSortTests
     {
         /// <summary>
-        /// Calls Bubble sort method with valid Inputs.
+        /// Calls Merge sort with valid inputs.
         /// </summary>
         [Test]
-        public void BubbleSortValidInput()
+        public void MergeSortValidInput()
         {
-            RunTestsForBubbleSort(BubbleSort.BubbleSortAlgorithm);
+            RunTestsForMergeSort(MergeSort.MergeSortAlgorithm);
         }
 
         private static int[][] GetSampleData()
@@ -30,15 +30,15 @@ namespace AlgorithmTests
             return sampleData;
         }
 
-        private static void RunTestsForBubbleSort(Func<int[], int[]> sortAlgorithm)
+        private static void RunTestsForMergeSort(Action<int[]> mergeSortAlgorithm)
         {
             var sampleData = GetSampleData();
 
             foreach (var sample in sampleData)
             {
-                var result = sortAlgorithm(sample);
-                CollectionAssert.IsOrdered(result);
-                PrintResults(result);
+                mergeSortAlgorithm(sample);
+                CollectionAssert.IsOrdered(sample);
+                PrintResults(sample);
             }
         }
 

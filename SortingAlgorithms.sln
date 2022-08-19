@@ -9,9 +9,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgorithmTests", "Algorithm
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelectionSort", "SelectionSort\SelectionSort.csproj", "{E900E3D3-89FF-415C-B010-2F1FD786AB87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertionSort", "InsertionSort\InsertionSort.csproj", "{B504A942-7F3A-460C-9D68-5014A2068F17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InsertionSort", "InsertionSort\InsertionSort.csproj", "{B504A942-7F3A-460C-9D68-5014A2068F17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShellSort", "ShellSort\ShellSort.csproj", "{C3F41F53-DC5E-4031-8C00-4BD81583506A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShellSort", "ShellSort\ShellSort.csproj", "{C3F41F53-DC5E-4031-8C00-4BD81583506A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5A578D18-427B-4E62-83E8-034C756D5051}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "MergeSort\MergeSort.csproj", "{DDBF81E8-062E-4DCB-B634-E5DB273EC24D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +46,10 @@ Global
 		{C3F41F53-DC5E-4031-8C00-4BD81583506A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3F41F53-DC5E-4031-8C00-4BD81583506A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3F41F53-DC5E-4031-8C00-4BD81583506A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDBF81E8-062E-4DCB-B634-E5DB273EC24D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDBF81E8-062E-4DCB-B634-E5DB273EC24D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDBF81E8-062E-4DCB-B634-E5DB273EC24D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDBF81E8-062E-4DCB-B634-E5DB273EC24D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

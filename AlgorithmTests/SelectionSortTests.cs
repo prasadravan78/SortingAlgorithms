@@ -1,10 +1,35 @@
 ﻿namespace AlgorithmTests
 {
-    using SelectionSort;
     using System;
+    using NUnit.Framework;
+    using SelectionSort;
 
+    /// <summary>
+    /// Provides tests for Selection Sort.
+    /// </summary>
     public class SelectionSortTests
     {
+        /// <summary>
+        /// Calls Selection sort with valid inputs.
+        /// </summary>
+        [Test]
+        public void SelectionSortValidInput()
+        {
+            RunTestsForSelctionSort(SelectionSort.SelectionSortAlgorithm);
+        }
+
+        private static void PrintResults(int[] result)
+        {
+            TestContext.WriteLine("---------------------------------------");
+
+            foreach (var num in result)
+            {
+                TestContext.Write(num + " ");
+            }
+
+            TestContext.WriteLine("***************************************");
+        }
+
         private static int[][] GetSampleData()
         {
             var sampleData = new int[5][];
@@ -18,13 +43,7 @@
             return sampleData;
         }
 
-        [Test]
-        public void SelectionSortValidInput()
-        {
-            RunTestsForSelctionSort(SelectionSort.SelectionSortAlgorithm);
-        }
-
-        private void RunTestsForSelctionSort(Func<int[], int[]> selectionSortAlgorithm)
+        private static void RunTestsForSelctionSort(Func<int[], int[]> selectionSortAlgorithm)
         {
             var sampleData = GetSampleData();
 
@@ -34,18 +53,6 @@
                 CollectionAssert.IsOrdered(result);
                 PrintResults(result);
             }
-        }
-
-        private void PrintResults(int[] result)
-        {
-            TestContext.WriteLine("---------------------------------------");
-
-            foreach (var num in result)
-            {
-                TestContext.Write(num + " ");
-            }
-
-            TestContext.WriteLine("***************************************");
         }
     }
 }

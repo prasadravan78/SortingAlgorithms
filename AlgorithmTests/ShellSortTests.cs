@@ -1,8 +1,8 @@
 ﻿namespace AlgorithmTests
 {
-    using ShellSort;
-    using NUnit.Framework;
     using System;
+    using NUnit.Framework;
+    using ShellSort;
 
     internal class ShellSortTests
     {
@@ -12,19 +12,20 @@
             RunTestsForShellSort(ShellSort.ShellSortAlgorithm);
         }
 
-        private void RunTestsForShellSort(Func<int[], int[]> shellSortAlgorithm)
+        private static int[][] GetSampleData()
         {
-            var sampleData = GetSampleData();
+            var sampleData = new int[5][];
 
-            foreach (var sample in sampleData)
-            {
-                var result = shellSortAlgorithm(sample);
-                CollectionAssert.IsOrdered(result);
-                PrintResults(result);
-            }
+            sampleData[0] = new int[] { 3, 1 };
+            sampleData[1] = new int[] { 9, 5, 8, -1, 4 };
+            sampleData[2] = new int[] { 1, 2, 3, 4, 5, 6 };
+            sampleData[3] = new int[] { -1 };
+            sampleData[4] = new int[] { 5, 0, 6, 7, 8, 9, 2 };
+
+            return sampleData;
         }
 
-        private void PrintResults(int[] result)
+        private static void PrintResults(int[] result)
         {
             TestContext.WriteLine("---------------------------------------");
 
@@ -36,17 +37,16 @@
             TestContext.WriteLine("***************************************");
         }
 
-        private int[][] GetSampleData()
+        private static void RunTestsForShellSort(Func<int[], int[]> shellSortAlgorithm)
         {
-            var sampleData = new int[5][];
+            var sampleData = GetSampleData();
 
-            sampleData[0] = new int[] { 3, 1 };
-            sampleData[1] = new int[] { 9, 5, 8, -1, 4 };
-            sampleData[2] = new int[] { 1, 2, 3, 4, 5, 6 };
-            sampleData[3] = new int[] { -1 };
-            sampleData[4] = new int[] { 5, 0, 6, 7, 8, 9, 2 };
-
-            return sampleData;
+            foreach (var sample in sampleData)
+            {
+                var result = shellSortAlgorithm(sample);
+                CollectionAssert.IsOrdered(result);
+                PrintResults(result);
+            }
         }
     }
 }
